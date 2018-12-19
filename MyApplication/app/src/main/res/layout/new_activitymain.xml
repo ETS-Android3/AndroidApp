@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewMainActivity">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/foodRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ListView
+        android:id="@+id/foodList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fff"
+        android:backgroundTint="@color/white"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/foodList"
+        app:layout_constraintEnd_toEndOf="@+id/foodList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:srcCompat="@drawable/collect" />
+
+</android.support.constraint.ConstraintLayout>

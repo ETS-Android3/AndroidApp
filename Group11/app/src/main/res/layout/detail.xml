@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/detailbg">
+
+        <View
+            android:id="@+id/v_fit"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="   绝代智谋"
+            android:textColor="#ffff00"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:text=" 诸葛亮"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:text="  法师"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/survival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="生存"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/survival_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/icon1"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/attack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="攻击"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/attack_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/icon2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="180dp"
+            android:layout_marginBottom="10dp"
+            android:text="技能"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/skill_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/icon3"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="260dp"
+            android:layout_marginBottom="10dp"
+            android:text="难度"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/difficulty_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/icon4"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+
+        <com.example.yangyuanhao.myapplication.FullPhotoView
+            android:id="@+id/photo_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/title"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="-165dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/updtbtn"
+            android:layout_width="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit"
+
+            android:onClick="editbtn"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_width="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/updtbtn"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/delete"
+            android:layout_marginTop="55dp"
+            android:onClick="delbtn"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20sp"
+            android:text="技能介绍"
+            android:textColor="#B8860B"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/skl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:paddingLeft="20sp"
+            android:text="策略之刻"
+            android:textColor="#8A000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/skl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:paddingLeft="20sp"
+            android:text="东风破袭"
+            android:textColor="#8A000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/skl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            android:paddingLeft="20sp"
+            android:text="时空穿梭"
+            android:textColor="#8A000000"
+            android:textSize="17sp" />
+
+
+
+        <TextView
+            android:id="@+id/skl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:paddingLeft="20sp"
+            android:text="元气弹"
+            android:textColor="#8A000000"
+            android:textSize="17sp" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1">
+
+        <cn.jzvd.JzvdStd
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/TitleSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:srcCompat="@drawable/sysu" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/in"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnshape"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/searchbutton"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:onClick="ClickSearchButton"
+            android:textSize="@dimen/buttonsize" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rdgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear">
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/buttonsize"
+            android:layout_marginEnd="10dp"
+            android:checked="true"
+            android:text="@string/rb1" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/buttonsize"
+            android:layout_marginEnd="10dp"
+            android:text="@string/rb2" />
+
+        <RadioButton
+            android:id="@+id/rbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/buttonsize"
+            android:layout_marginEnd="10dp"
+            android:text="@string/rb3" />
+
+        <RadioButton
+            android:id="@+id/rbtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/buttonsize"
+            android:text="@string/rb4" />
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

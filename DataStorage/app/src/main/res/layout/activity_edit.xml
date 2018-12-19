@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit">
+    <LinearLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+        <EditText
+            android:id="@+id/editText"
+            android:gravity="top|left"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/tl"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/svbtn"
+            android:onClick="clksvbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/ldbtn"
+            android:onClick="clkldbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOAD"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="418dp" />
+
+        <Button
+            android:id="@+id/clrbtn"
+            android:onClick="clkclrbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLEAR" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit">
+
+    <RelativeLayout
+        android:id="@+id/RegisterUI"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/edittitle"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:text="Edit Hero"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/edittitle"
+            android:src= "@drawable/add"
+            android:layout_width="120dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="switchicon"
+            android:layout_height="120dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/namepanel"
+            android:layout_below="@+id/icon"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/ename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="英雄名称"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/titlepanel"
+            android:layout_below="@+id/namepanel"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="英雄外号"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/ins1"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/titlepanel"
+            android:textSize="20dp"
+            android:text="请选择职业: "
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/prospinner"
+            android:layout_width="wrap_content"
+            android:entries="@array/pspinner"
+            android:layout_below="@+id/titlepanel"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ins1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ins2"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="请选择各项属性值: "
+            android:layout_below="@id/ins1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ins3"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:text="生存: "
+            android:layout_below="@+id/ins2"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/hpspinner"
+            android:layout_width="wrap_content"
+            android:entries="@array/vspinner"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ins2"
+            android:layout_toRightOf="@+id/ins3"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ins4"
+            android:text="攻击: "
+            android:textSize="16dp"
+            android:layout_below="@+id/ins2"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/atkspinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/atkspinner"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:entries="@array/vspinner"
+            android:layout_below="@+id/ins2"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ins5"
+            android:text="技能: "
+            android:textSize="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ins3"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/sklspinner"
+            android:layout_width="wrap_content"
+            android:entries="@array/vspinner"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ins5"
+            android:layout_below="@+id/ins3"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ins6"
+            android:text="难度: "
+            android:textSize="16dp"
+            android:layout_toLeftOf="@id/diffspinner"
+            android:layout_below="@+id/ins3"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/diffspinner"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:entries="@array/vspinner"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@+id/ins3"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ftskl"
+            android:layout_below="@+id/ins5"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/skl1panel"
+                android:layout_below="@+id/namepanel"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/eskl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:hint="技能1"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/skl2panel"
+                android:layout_below="@+id/namepanel"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/eskl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:hint="技能2"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ltskl"
+            android:layout_below="@+id/ftskl"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/skl3panel"
+                android:layout_below="@+id/namepanel"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/eskl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:hint="技能3"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/skl4panel"
+                android:layout_below="@+id/namepanel"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/eskl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:hint="技能4"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/ltskl"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Rokbtn"
+                android:onClick="eclkok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/Rclearbtn"
+                android:onClick="eclkcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="CANCEL" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

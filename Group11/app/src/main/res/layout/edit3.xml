@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="#F0F8FF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7">
+
+        <ImageView
+            android:id="@+id/the_view"
+            android:layout_width="178dp"
+            android:layout_height="166dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/zhugeliang" />
+
+        <Button
+            android:id="@+id/bt_choose_share_file"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/the_view"
+            android:layout_marginBottom="114dp"
+            android:onClick="handlerShare"
+            android:text="Choose Share File"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="50dp"
+            android:text="Back"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="300dp"
+            android:text="Next"
+            android:background="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

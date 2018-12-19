@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PersonalExperimentOne</string>
+    <string name="hello">Hi Android!</string>
+    <string name="in">请输入搜索内容</string>
+    <string name="title">中山大学智慧健康服务平台</string>
+    <string name="searchbutton">搜 索</string>
+    <string name="rb1">图片</string>
+    <string name="rb2">视频</string>
+    <string name="rb3">问答</string>
+    <string name="rb4">资讯</string>
+    <string name="moreinfo">更多资料</string>
+    <string name="appwidget_text">当前没有任何信息</string>
+    <string name="add_widget">Add widget</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/LRchoice"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/slui"
+            android:onClick="setLUI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+        <RadioButton
+            android:onClick="setRUI"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/RegisterUI"
+        app:layout_constraintTop_toBottomOf="@+id/LRchoice"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:src= "@drawable/add"
+            android:layout_width="120dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="switchicon"
+            android:layout_height="120dp" />
+        <LinearLayout
+            android:layout_below="@+id/icon"
+            android:id="@+id/rll"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Rusr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="New User Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <EditText
+                android:id="@+id/Rpasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/Rcfmpasswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/rll"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/Rokbtn"
+                android:onClick="Rclkok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/Rclearbtn"
+                android:onClick="Rclkclr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="CLEAR" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/LoginUI"
+        app:layout_constraintTop_toBottomOf="@+id/LRchoice"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/ll"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/usr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="User Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/okbtn"
+                android:onClick="clkok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK" />
+
+            <Button
+                android:id="@+id/clearbtn"
+                android:onClick="clkclr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="CLEAR" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

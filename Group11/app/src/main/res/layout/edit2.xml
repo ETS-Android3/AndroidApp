@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="#F0F8FF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20sp"
+            android:text="角色创建"
+            android:textColor="#B8860B"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:paddingLeft="20sp"
+            android:text="技能1"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="90dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:paddingLeft="20sp"
+            android:text="技能2"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="175dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="265dp"
+            android:paddingLeft="20sp"
+            android:text="技能3"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="260dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:paddingLeft="20sp"
+            android:text="技能4"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="345dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="50dp"
+            android:text="Back"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="300dp"
+            android:text="Next"
+            android:background="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

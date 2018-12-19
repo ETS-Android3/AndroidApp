@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/goingback"
+                android:background="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:onClick="goback"
+                app:srcCompat="@drawable/back" />
+            <TextView
+                android:id="@+id/itemname"
+                android:text="DEFAULT"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/biggest"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/star"
+                android:background="@color/blue"
+                android:onClick="sclick"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/empty_star"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="70dp">
+                 <TextView
+                        android:id="@+id/category"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                     android:gravity="center_vertical"
+                     android:height="28dp"
+                     android:textSize="@dimen/TitleSize"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginTop="5dp"
+                      android:text="DEFAULT"
+                        android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/nutrition"
+                    android:gravity="center_vertical"
+                    android:height="28dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/TitleSize"
+                    android:text="DEFAULT"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:foregroundGravity="center_vertical"
+                    android:layout_width="2dp"
+                    android:background="@color/grey"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cbtn"
+                    android:layout_height="50dp" />
+
+                    <ImageButton
+                        android:id="@+id/cbtn"
+                        android:background="@color/white"
+                        android:layout_width="50dp"
+                        android:onClick="collec"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerInside"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/collect"
+                        android:layout_height="50dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="80dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/biggest"
+                            android:text="@string/moreinfo"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/option"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

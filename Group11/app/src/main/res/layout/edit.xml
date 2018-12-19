@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="#F0F8FF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20sp"
+            android:text="角色创建"
+            android:textColor="#B8860B"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:paddingLeft="20sp"
+            android:text="名字："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="20sp"
+            android:text="称号："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="115dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:paddingLeft="20sp"
+            android:text="职业："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="175dp"
+            android:ems="10"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:paddingLeft="20sp"
+            android:text="生存能力值："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="260dp"
+            android:entries="@array/spingarr"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="315dp"
+            android:paddingLeft="20sp"
+            android:text="攻击伤害值："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="315dp"
+            android:entries="@array/spingarr"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370dp"
+            android:paddingLeft="20sp"
+            android:text="技能效果值："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="370dp"
+            android:entries="@array/spingarr"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="425dp"
+            android:paddingLeft="20sp"
+            android:text="上手难度值："
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="425dp"
+            android:entries="@array/spingarr"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="50dp"
+            android:text="Cancel"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="300dp"
+            android:text="Next"
+            android:background="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

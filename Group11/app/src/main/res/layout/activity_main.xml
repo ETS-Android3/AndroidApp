@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <com.donkingliang.banner.CustomBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:indicatorStyle="ORDINARY"
+        app:indicatorGravity="CENTER"
+        app:indicatorSelectRes="@drawable/shape_point_select"
+        app:indicatorUnSelectRes="@drawable/shape_point_unselect"
+        app:indicatorInterval="5dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="请输入英雄名称"
+            android:inputType="none|text"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/search"
+            android:onClick="clksrch" />
+
+
+        <Button
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/radioGroup"
+            android:background="@drawable/add"
+            android:onClick="clkadd" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="全部"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="坦克"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="战士"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刺客"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="法师"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="射手"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="辅助"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/herolist"
+            android:layout_below="@id/radioGroup"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
